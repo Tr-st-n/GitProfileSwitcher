@@ -229,8 +229,8 @@ namespace GitProfileSwitcher
             }
             set
             {
-                CmdExeIO(NAME_CMD + " " + value.Name);
-                CmdExeIO(EMAIL_CMD + " " + value.Email);
+                CmdExeIO($"{NAME_CMD} \"{value.Name}\"");
+                CmdExeIO($"{EMAIL_CMD} \"{value.Email}\"");
             }
         }
 
